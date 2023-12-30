@@ -1,0 +1,71 @@
+/* Header.css */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #1d1b1b;
+    color: #fff;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 50px; /* Adjust the width as needed */
+    margin-right: 10px; /* Add margin between the logo and title */
+  }
+  
+  .title {
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  .nav {
+    display: flex;
+  }
+  
+  .nav a {
+    margin-right: 15px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: normal;
+    transition: font-weight 0.3s ease; /* Add a smooth transition effect */
+  }
+  
+  .nav a:hover {
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .nav a:active,
+  .nav a:focus {
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-bar input {
+    margin-right: 10px;
+    padding: 5px;
+  }
+  
+  .search-bar button {
+    padding: 6px 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .search-bar button:hover {
+    background-color: #45a049;
+  }
+   
