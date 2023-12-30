@@ -1,6 +1,6 @@
 import React from 'react';
-import './Discovery.css';
-import Post from '../Post/Post.js'; // Adjust the path based on your project structure
+import './discovery.css';
+import Post from '../Post/post.js'; // Adjust the path based on your project structure
 
 function Discovery() {
   return (

@@ -1,4 +1,4 @@
-import './Post.css';
+import './post.css';
 import ironMan from '../Images/ironman.jpeg'
 import Like from '../Images/Like.jpg'
 import Comment from '../Images/Comment.png'
