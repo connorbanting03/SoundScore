@@ -11,8 +11,8 @@ const Header = () => {
       <nav className="nav">
         <a href="/">Sign In</a>
         <a href="/">Create Account</a>
-        <a href="/">Discover</a>
-        <a href="/">Top Rated</a>
+        <a href="/Discovery">Discover</a>
+        <a href="/TopRated">Top Rated</a>
       </nav>
       <div className="search-bar">
         <input type="text" placeholder="Search" />

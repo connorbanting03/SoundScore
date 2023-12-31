@@ -1,8 +1,7 @@
 import React from 'react';
-import './discovery.css';
-import Post from '../Post/post.js'; // Adjust the path based on your project structure
+import './TopRated.css';
 import SongRow from '../SongRow/SongRow.js';
-function Discovery() {
+function TopRated() {
   const rockSongUrls = [
     'https://open.spotify.com/embed/track/4Y6GIje3GErVRIq1Ff5BJq?utm_source=generator',
     'https://open.spotify.com/embed/track/3ZOEytgrvLwQaqXreDs2Jx?utm_source=generator',
@@ -35,16 +34,16 @@ function Discovery() {
 
   ]
   return (
-    <div className="discovery-container">
+    <div className="toprated-container">
       
-      <Post embededURL={rockSongUrls[0]}/>
-      <Post embededURL={rockSongUrls[2]}/>
-      <Post embededURL={rockSongUrls[4]}/>
-      <Post embededURL={rockSongUrls[3]}/>
+      <SongRow songUrls={rockSongUrls} title={'Featured Rock Songs'}/>
+      <SongRow songUrls={rapSongUrls} title={'Featured Rap Songs'}/>
+      <SongRow songUrls={popSongUrls} title={'Featured Pop Songs'}/>
+      <SongRow songUrls={edmSongUrls} title={'Featured EDM Songs'}/>
     </div>
 
     
   );
 }
 
-export default Discovery;
+export default TopRated;
