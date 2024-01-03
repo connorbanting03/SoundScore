@@ -1,4 +1,3 @@
-import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Discovery from './components/Discovery/discovery.js';
@@ -12,9 +11,9 @@ function App() {
       <div className="App">
         <Header />
         <Routes>
-          <Route path="/" element={<TopRated/>} />
-          <Route path="/TopRated" element={<TopRated/>} />
-          <Route path="/Discovery" element={<Discovery/>}/>
+          <Route path="/" element={<TopRated />} />
+          <Route path="/TopRated" element={<TopRated />} />
+          <Route path="/Discovery" element={<Discovery />} />
         </Routes>
         <Footer />
       </div>

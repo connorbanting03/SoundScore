@@ -1,7 +1,19 @@
-import React from 'react';
-import './Header.css'; // You can create a separate CSS file for styling
-import Logo from '../Images/Logo.jpeg'
+import React, { useState } from 'react';
+import './Header.css';
+import Logo from '../Images/Logo.jpeg';
+import Login from '../Login/Login.js';
+
 const Header = () => {
+  const [isLoginOpen, setIsLoginOpen] = useState(false);
+
+  const openLogin = () => {
+    setIsLoginOpen(true);
+  };
+
+  const closeLogin = () => {
+    setIsLoginOpen(false);
+  };
+
   return (
     <div className="header">
       <div className="logo-container">
@@ -9,7 +21,9 @@ const Header = () => {
         <h1 className="title">SoundScore</h1>
       </div>
       <nav className="nav">
-        <a href="/">Sign In</a>
+        <a href='#' onClick={openLogin}>
+          Sign In
+        </a>
         <a href="/">Create Account</a>
         <a href="/Discovery">Discover</a>
         <a href="/TopRated">Top Rated</a>
@@ -18,6 +32,8 @@ const Header = () => {
         <input type="text" placeholder="Search" />
         <button>Search</button>
       </div>
+
+      {isLoginOpen && <Login onClose={closeLogin} />}
     </div>
   );
 };
