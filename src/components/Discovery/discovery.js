@@ -5,7 +5,7 @@ import SongRow from '../SongRow/SongRow.js';
 function Discovery() {
   const rockSongUrls = [
     'https://open.spotify.com/embed/track/4Y6GIje3GErVRIq1Ff5BJq?utm_source=generator',
-    'https://open.spotify.com/embed/track/3ZOEytgrvLwQaqXreDs2Jx?utm_source=generator',
+    'https://open.spotify.com/embed/track/4Y6GIje3GErVRIq1Ff5BJq?utm_source=generator',
     'https://open.spotify.com/embed/track/7bwgSYKRA5P4IIEesnCA53?utm_source=generator',
     'https://open.spotify.com/embed/track/1ksVGMm8GlcSWFie5mYPcI?utm_source=generator',
     'https://open.spotify.com/embed/track/2MLHyLy5z5l5YRp7momlgw?utm_source=generator',
@@ -37,7 +37,7 @@ function Discovery() {
   return (
     <div className="discovery-container">
       
-      <Post embededURL={rockSongUrls[0]}/>
+      <Post embededURL={rockSongUrls[1]}/>
       <Post embededURL={rockSongUrls[2]}/>
       <Post embededURL={rockSongUrls[4]}/>
       <Post embededURL={rockSongUrls[3]}/>

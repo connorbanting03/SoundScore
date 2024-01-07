@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Header.css';
 import Logo from '../Images/Logo.jpeg';
 import Login from '../Login/Login.js';
+import SearchBar from '../SearchBar/SearchBar.js'; // Adjust the path based on your project structure
 
 const Header = () => {
   const [isLoginOpen, setIsLoginOpen] = useState(false);
@@ -13,7 +14,9 @@ const Header = () => {
   const closeLogin = () => {
     setIsLoginOpen(false);
   };
-
+  const onSearch = (data) => {
+    console.log(data)
+  }
   return (
     <div className="header">
       <div className="logo-container">
@@ -28,10 +31,8 @@ const Header = () => {
         <a href="/Discovery">Discover</a>
         <a href="/TopRated">Top Rated</a>
       </nav>
-      <div className="search-bar">
-        <input type="text" placeholder="Search" />
-        <button>Search</button>
-      </div>
+
+      <SearchBar onSearch={onSearch} />
 
       {isLoginOpen && <Login onClose={closeLogin} />}
     </div>

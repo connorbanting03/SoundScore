@@ -1,0 +1,48 @@
+/* SearchBar.css */
+
+.search-bar {
+    position: relative;
+  }
+  
+  .search-container {
+    position: relative;
+  }
+  
+  input {
+    width: 300px; /* Adjust the width as needed */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .search-dropdown {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 300px; /* Adjust the width as needed */
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+  
+  .search-dropdown li {
+    padding: 10px;
+    cursor: pointer;
+    color: black;
+  }
+  
+  .search-dropdown li:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .album-image {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
