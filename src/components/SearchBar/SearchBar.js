@@ -1,4 +1,3 @@
-// SearchBar.js
 import React, { useState, useEffect } from 'react';
 import './SearchBar.css'; // Import your CSS file for styling
 
