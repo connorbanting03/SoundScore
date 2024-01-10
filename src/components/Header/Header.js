@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import './Header.css';
 import Logo from '../Images/Logo.jpeg';
 import Login from '../Login/Login.js';
-import SearchBar from '../SearchBar/SearchBar.js'; // Adjust the path based on your project structure
-
+import SearchBar from '../SearchBar/SearchBar.js'; 
+//Header function
 const Header = () => {
   const [isLoginOpen, setIsLoginOpen] = useState(false);
 

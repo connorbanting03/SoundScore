@@ -1,7 +1,8 @@
 import React from 'react';
 import './discovery.css';
-import Post from '../Post/post.js'; // Adjust the path based on your project structure
+import Post from '../Post/post.js'; 
 import SongRow from '../SongRow/SongRow.js';
+//Front end functionality for 'Posts' section
 function Discovery() {
   const rockSongUrls = [
     'https://open.spotify.com/embed/track/4Y6GIje3GErVRIq1Ff5BJq?utm_source=generator',

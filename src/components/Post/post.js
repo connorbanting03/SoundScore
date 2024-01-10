@@ -7,10 +7,10 @@ import Comment from '../Images/Comment.png'
 function Post({embededURL}) {
   return (
     <div className="instagram-post">
-    {/* Top section with username and profile picture */}
+    {}
     <div className="user-info">
       <img
-        src={ironMan} // Replace with the actual profile picture URL
+        src={ironMan} 
         alt="Profile Pic"
         className="profile-pic"
       />
