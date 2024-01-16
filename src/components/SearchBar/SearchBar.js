@@ -43,7 +43,7 @@ const SearchBar = ({ onSearch }) => {
                   className="album-image"
                 />
                 <span className="song-details">
-                  {track.name} by {track.artist}
+                  {track.name}
                 </span>
               </li>
             ))}

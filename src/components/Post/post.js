@@ -17,7 +17,7 @@ function Post({embededURL}) {
       <span className="username">Connorbanting03</span>
     </div>
 
-    {/* Spotify Embed */}
+    {}
     <iframe
       title="Spotify Embed: Recommendation Playlist"
       src={embededURL}
@@ -29,7 +29,7 @@ function Post({embededURL}) {
       loading="lazy"
     />
 
-    {/* Bottom section with likes and comments */}
+    {}
     <div className="likes-comments">
         <button className="likes-button">
           <img src={Like} alt="Like" />
